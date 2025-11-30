@@ -1,0 +1,12 @@
+{
+  "model": "microsoft/bitnet-b1.58-2B-4T",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "split": "validation",
+  "batch_size": 2,
+  "seq_len": 128,
+  "max_samples": null,
+  "max_batches": null,
+  "perplexity": 33.120144402295914,
+  "timestamp": "20251130_181118"
+}

@@ -1,0 +1,315 @@
+{
+  "model": "microsoft/bitnet-b1.58-2B-4T",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "n_samples": 50,
+  "n_mention": 2,
+  "batch_size": 1,
+  "seq_len": 512,
+  "accuracy": 0.4,
+  "correct": 20,
+  "total": 50,
+  "timestamp": "20251130_174934",
+  "examples": [
+    {
+      "prompt": "Context: Last year I visited the bustling New York with some friends. The experience was unforgettable and changed my perspective. After some time, I returned to the quiet New York to start a new chapter. My cousin still prefers the modern city of London. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "quiet",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the busy New York with some friends. My cousin still prefers the serene city of Madrid. We spent a lot of time exploring museums and trying new food. The trip opened my eyes to new cultures and ways of life. Eventually, I went back to the noisy New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "noisy",
+      "generated": "noisy",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the crowded New York with some friends. The experience was unforgettable and changed my perspective. My cousin still prefers the noisy city of Paris. A few years later, I found myself in the historic New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "historic",
+      "generated": "crowded",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the noisy New York with some friends. We spent a lot of time exploring museums and trying new food. We spent a lot of time exploring museums and trying new food. I took hundreds of photos and met many interesting people. My cousin still prefers the vibrant city of Paris. I took hundreds of photos and met many interesting people. After some time, I decided to move to the crowded New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "crowded",
+      "generated": "noisy",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the energetic New York with some friends. I learned a lot about history and art during my visit. I learned a lot about history and art during my visit. I learned a lot about history and art during my visit. The experience was unforgettable and changed my perspective. My cousin still prefers the tranquil city of Paris. Later in life, I returned to the quiet New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the peaceful New York with some friends. I learned a lot about history and art during my visit. My cousin still prefers the historic city of Barcelona. I took hundreds of photos and met many interesting people. I took hundreds of photos and met many interesting people. Years later, I found myself in the quiet New York to start a new chapter. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "Quiet",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the historic New York with some friends. My cousin still prefers the tranquil city of Barcelona. The experience was unforgettable and changed my perspective. Years later, I went back to the peaceful New York to start a new chapter. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "peaceful",
+      "generated": "unforgettable",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. My cousin still prefers the energetic city of Rome. We spent a lot of time exploring museums and trying new food. I learned a lot about history and art during my visit. Later in life, I went back to the peaceful New York to start a new chapter. We spent a lot of time exploring museums and trying new food. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "peaceful",
+      "generated": "Quiet",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. I took hundreds of photos and met many interesting people. My cousin still prefers the vibrant city of Chicago. We spent a lot of time exploring museums and trying new food. After some time, I returned to the tranquil New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "tranquil",
+      "generated": "tranquil",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the modern New York with some friends. A few years later, I returned to the tranquil New York to start a new chapter. I learned a lot about history and art during my visit. My cousin still prefers the famous city of Madrid. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "tranquil",
+      "generated": "Tranquil",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the noisy New York with some friends. My cousin still prefers the modern city of Chicago. We spent a lot of time exploring museums and trying new food. The experience was unforgettable and changed my perspective. The trip opened my eyes to new cultures and ways of life. After some time, I found myself in the busy New York to start a new chapter. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "busy",
+      "generated": "noisy",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the vibrant New York with some friends. I learned a lot about history and art during my visit. I took hundreds of photos and met many interesting people. My cousin still prefers the chaotic city of Madrid. Eventually, I found myself in the tranquil New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "tranquil",
+      "generated": "chaotic",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the energetic New York with some friends. My cousin still prefers the historic city of Chicago. Years later, I went back to the ancient New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. The trip opened my eyes to new cultures and ways of life. The trip opened my eyes to new cultures and ways of life. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "ancient",
+      "generated": "historic",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. After some time, I decided to move to the modern New York to start a new chapter. The experience was unforgettable and changed my perspective. I took hundreds of photos and met many interesting people. My cousin still prefers the ancient city of Chicago. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "modern",
+      "generated": "unforgettable",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the tranquil New York with some friends. My cousin still prefers the crowded city of Tokyo. I learned a lot about history and art during my visit. Eventually, I went back to the historic New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "historic",
+      "generated": "tranquil",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the busy New York with some friends. A few years later, I went back to the peaceful New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the crowded city of Barcelona. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "peaceful",
+      "generated": "peaceful",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the vibrant New York with some friends. A few years later, I decided to move to the modern New York to start a new chapter. My cousin still prefers the famous city of Chicago. The experience was unforgettable and changed my perspective. The trip opened my eyes to new cultures and ways of life. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "modern",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the modern New York with some friends. My cousin still prefers the vibrant city of Barcelona. I took hundreds of photos and met many interesting people. Later in life, I returned to the quiet New York to start a new chapter. We spent a lot of time exploring museums and trying new food. We spent a lot of time exploring museums and trying new food. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "Quiet",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the noisy New York with some friends. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the crowded city of Paris. The trip opened my eyes to new cultures and ways of life. After some time, I returned to the energetic New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "energetic",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. My cousin still prefers the vibrant city of Chicago. I took hundreds of photos and met many interesting people. After some time, I went back to the ancient New York to start a new chapter. We spent a lot of time exploring museums and trying new food. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "ancient",
+      "generated": "ancient",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the energetic New York with some friends. My cousin still prefers the serene city of Chicago. Later in life, I returned to the vibrant New York to start a new chapter. I took hundreds of photos and met many interesting people. The trip opened my eyes to new cultures and ways of life. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "vibrant",
+      "generated": "Serene",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. We spent a lot of time exploring museums and trying new food. We spent a lot of time exploring museums and trying new food. My cousin still prefers the quiet city of Tokyo. After some time, I found myself in the energetic New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "energetic",
+      "generated": "Quiet",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. I took hundreds of photos and met many interesting people. The experience was unforgettable and changed my perspective. My cousin still prefers the ancient city of Barcelona. Years later, I decided to move to the quiet New York to start a new chapter. The experience was unforgettable and changed my perspective. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "Experience",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the crowded New York with some friends. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the vibrant city of Chicago. Years later, I returned to the noisy New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "noisy",
+      "generated": "Noisy",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. We spent a lot of time exploring museums and trying new food. A few years later, I found myself in the noisy New York to start a new chapter. I took hundreds of photos and met many interesting people. My cousin still prefers the tranquil city of Madrid. I learned a lot about history and art during my visit. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "noisy",
+      "generated": "Quiet",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. I learned a lot about history and art during my visit. The trip opened my eyes to new cultures and ways of life. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the bustling city of Rome. Eventually, I found myself in the energetic New York to start a new chapter. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "energetic",
+      "generated": "Quiet",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the serene New York with some friends. Years later, I returned to the famous New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the historic city of Rome. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "famous",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the bustling New York with some friends. A few years later, I decided to move to the busy New York to start a new chapter. I learned a lot about history and art during my visit. My cousin still prefers the crowded city of Chicago. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "busy",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the energetic New York with some friends. I took hundreds of photos and met many interesting people. The experience was unforgettable and changed my perspective. Eventually, I found myself in the quiet New York to start a new chapter. My cousin still prefers the modern city of Tokyo. We spent a lot of time exploring museums and trying new food. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "Quiet",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the peaceful New York with some friends. The experience was unforgettable and changed my perspective. My cousin still prefers the noisy city of London. After some time, I returned to the historic New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "historic",
+      "generated": "visited",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. I learned a lot about history and art during my visit. After some time, I went back to the chaotic New York to start a new chapter. My cousin still prefers the modern city of Chicago. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "chaotic",
+      "generated": "chaotic",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the noisy New York with some friends. I took hundreds of photos and met many interesting people. Years later, I returned to the quiet New York to start a new chapter. I learned a lot about history and art during my visit. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the vibrant city of Barcelona. We spent a lot of time exploring museums and trying new food. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "quiet",
+      "generated": "Quiet",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the tranquil New York with some friends. My cousin still prefers the ancient city of Tokyo. After some time, I decided to move to the vibrant New York to start a new chapter. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "vibrant",
+      "generated": "tranquil",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. My cousin still prefers the tranquil city of Chicago. I took hundreds of photos and met many interesting people. I learned a lot about history and art during my visit. We spent a lot of time exploring museums and trying new food. The trip opened my eyes to new cultures and ways of life. Eventually, I decided to move to the vibrant New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "vibrant",
+      "generated": "Chicago",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the peaceful New York with some friends. My cousin still prefers the noisy city of Madrid. The trip opened my eyes to new cultures and ways of life. I took hundreds of photos and met many interesting people. A few years later, I went back to the famous New York to start a new chapter. We spent a lot of time exploring museums and trying new food. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "famous",
+      "generated": "same",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the chaotic New York with some friends. We spent a lot of time exploring museums and trying new food. I took hundreds of photos and met many interesting people. My cousin still prefers the historic city of Tokyo. A few years later, I returned to the noisy New York to start a new chapter. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "noisy",
+      "generated": "chaotic",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the tranquil New York with some friends. After some time, I went back to the modern New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the busy city of Berlin. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "modern",
+      "generated": "New",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the ancient New York with some friends. The experience was unforgettable and changed my perspective. My cousin still prefers the modern city of London. The trip opened my eyes to new cultures and ways of life. Years later, I returned to the famous New York to start a new chapter. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "famous",
+      "generated": "same",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the noisy New York with some friends. The trip opened my eyes to new cultures and ways of life. I took hundreds of photos and met many interesting people. My cousin still prefers the bustling city of Barcelona. After some time, I went back to the crowded New York to start a new chapter. We spent a lot of time exploring museums and trying new food. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "crowded",
+      "generated": "crowded",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the historic New York with some friends. The experience was unforgettable and changed my perspective. The trip opened my eyes to new cultures and ways of life. After some time, I found myself in the tranquil New York to start a new chapter. The experience was unforgettable and changed my perspective. My cousin still prefers the famous city of Paris. We spent a lot of time exploring museums and trying new food. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "tranquil",
+      "generated": "Tranquil",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the ancient New York with some friends. The experience was unforgettable and changed my perspective. The experience was unforgettable and changed my perspective. The experience was unforgettable and changed my perspective. Years later, I went back to the chaotic New York to start a new chapter. My cousin still prefers the energetic city of Paris. I took hundreds of photos and met many interesting people. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "chaotic",
+      "generated": "chaotic",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the famous New York with some friends. My cousin still prefers the modern city of Berlin. We spent a lot of time exploring museums and trying new food. The trip opened my eyes to new cultures and ways of life. The experience was unforgettable and changed my perspective. Later in life, I returned to the tranquil New York to start a new chapter. We spent a lot of time exploring museums and trying new food. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "tranquil",
+      "generated": "Tranquil",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the serene New York with some friends. My cousin still prefers the chaotic city of Chicago. I learned a lot about history and art during my visit. Eventually, I decided to move to the noisy New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "noisy",
+      "generated": "chaotic",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the modern New York with some friends. The experience was unforgettable and changed my perspective. After some time, I returned to the serene New York to start a new chapter. My cousin still prefers the historic city of Chicago. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "serene",
+      "generated": "serene",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the chaotic New York with some friends. Years later, I went back to the energetic New York to start a new chapter. We spent a lot of time exploring museums and trying new food. My cousin still prefers the tranquil city of London. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "energetic",
+      "generated": "Years",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the ancient New York with some friends. I took hundreds of photos and met many interesting people. My cousin still prefers the chaotic city of Chicago. I took hundreds of photos and met many interesting people. Years later, I decided to move to the serene New York to start a new chapter. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "serene",
+      "generated": "Serene",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the crowded New York with some friends. I took hundreds of photos and met many interesting people. We spent a lot of time exploring museums and trying new food. A few years later, I decided to move to the modern New York to start a new chapter. My cousin still prefers the chaotic city of Madrid. I learned a lot about history and art during my visit. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "modern",
+      "generated": "crowded",
+      "match": false
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. We spent a lot of time exploring museums and trying new food. The trip opened my eyes to new cultures and ways of life. A few years later, I went back to the chaotic New York to start a new chapter. My cousin still prefers the crowded city of Tokyo. The experience was unforgettable and changed my perspective. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "chaotic",
+      "generated": "chaotic",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the modern New York with some friends. Eventually, I went back to the serene New York to start a new chapter. I took hundreds of photos and met many interesting people. My cousin still prefers the energetic city of Madrid. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "serene",
+      "generated": "Serene",
+      "match": true
+    },
+    {
+      "prompt": "Context: Last year I visited the quiet New York with some friends. The trip opened my eyes to new cultures and ways of life. My cousin still prefers the historic city of Madrid. A few years later, I found myself in the vibrant New York to start a new chapter. The trip opened my eyes to new cultures and ways of life. Question: What was the adjective before the second time the city New York was mentioned? Answer with one word only:",
+      "expected": "vibrant",
+      "generated": "Quiet",
+      "match": false
+    }
+  ]
+}
