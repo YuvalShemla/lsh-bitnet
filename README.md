@@ -75,10 +75,10 @@ We have established baseline performance on two dataset types:
 #### 1. **WikiText-103 Perplexity Baseline**
 - **Dataset**: WikiText-103 validation split
 - **Evaluation**: Language modeling perplexity
-- **Coverage**: 128,000 tokens (50.7% of validation set)
-- **Configuration**: 500 batches × 2 sequences × 128 tokens
-- **Result**: **Perplexity = 15,721.5**
-- **File**: `results/baseline_wikitext103_validation_all_500batches_*.json`
+- **Coverage**: 252,672 tokens (full validation set)
+- **Configuration**: 987 batches × 2 sequences × 128 tokens
+- **Result**: **Perplexity = 33.12**
+- **File**: `results/baseline_wikitext103_validation_all_all_*.json`
 
 #### 2. **Synthetic New York Adjective Task Baseline**
 - **Dataset**: Synthetic task requiring tracking 2nd mention of "New York"
